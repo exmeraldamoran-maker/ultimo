@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>registro</title>
+<style>
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(-45deg, #ee7752, #3c78e7, #c4adb3, #7aebd0);
+  background-size: 400% 400%;
+  animation: gradient 12s ease infinite;
+  display: flex;
+  justify-content: center;  
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+}
+@keyframes gradient {
+  0% {background-position: 0% 50%;}
+  50% {background-position: 100% 50%;}
+  100% {background-position: 0% 50%;}
+}
+.login {
+  background: rgba(255,255,255,0.9);
+  padding: 40px;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.2);
+  width: 300px;
+  text-align: center;
+}
+.login input {
+  width: 100%;
+  padding: 10px;
+  margin: 8px 0;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+}
+.login button {
+  width: 100%;
+  padding: 10px;
+  background: #23a6d5;
+  border: none;
+  border-radius: 8px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+.login button:hover {
+  background: #1d8cbf;
+}
+form {
+  background: white; padding: 30px; border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+  width: 300px;
+}
+input {
+  width: 100%; margin: 8px 0; padding: 10px;
+  border: 1px solid #ccc; border-radius: 8px;
+}
+button {
+  width: 100%; padding: 10px; background: #5563DE;
+  color: white; border: none; border-radius: 8px;
+  cursor: pointer; font-size: 16px;
+}
+button:hover { background: #3743a1; }
+</style>
+</head>
+<body>
+<form id="loginForm">
+  <h2>Registro</h2>
+  <input type="text" placeholder="Nombre" required>
+  <input type="text" placeholder="Apellido" required>
+  <input type="text" placeholder="Dirección" required>
+  <input type="number" placeholder="Edad" required>
+  <input type="email" placeholder="Correo" required>
+  <input type="password" placeholder="Contraseña" required>
+<a href="login.html">  <button type="submit">Ingresar</button>
+</form>
+
+<script>
+document.getElementById("loginForm").addEventListener("submit", e => {
+  e.preventDefault();
+  if (e.target.checkValidity()) {
+    alert("Inicio de sesión exitoso");
+
+    // 🔹 Espera medio segundo y redirige
+    setTimeout(() => {
+      window.location.href = "login.html";
+    }, 500);
+  }
+});
+</script>
+</body>
+</html>
