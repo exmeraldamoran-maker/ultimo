@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Columnas</title>
+	<style>
+		body{background-color: #ddd;}
+		#container{
+			background-color: white;
+			margin: 0 auto;
+			width: 800px;
+			padding: 20px;
+
+			
+		}
+
+		article{
+			padding-top: 20px;
+			column-count: 3;
+			column-gap: 20px;
+			column-rule: dotted 4px #ccc;
+			
+		}
+
+		/* Menú base */
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ocultar checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Estilo del botón "Menú" (menos brillo) */
+.menu-icon {
+  font-size: 18px;
+  color: black;
+  background-color: #7ddcff; /* celeste suave */
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.menu-icon:hover {
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+
+/* Lista oculta por defecto */
+.menu-list {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: none;
+  text-align: left; /* ← aquí cambiamos a izquierda */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+}
+
+/* Mostrar lista cuando el checkbox está activado */
+#menu-toggle:checked + .menu-icon + .menu-list {
+  display: block;
+}
+
+/* Estilo de los enlaces */
+.menu-list li a {
+  display: block;
+  padding: 12px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left; /* ← forzamos alineación izquierda */
+}
+
+.menu-list li:last-child a {
+  border-bottom: none;
+}
+
+.menu-list li a:hover {
+  background: linear-gradient(90deg, #8360c3, #2ebf91);
+  color: #fff;
+  box-shadow: inset 0 0 8px #2ebf91;
+  border-radius: 5px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .menu-icon {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .menu-list li a {
+    padding: 10px 14px;
+  }
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<img src="paraventajas.jpg" width="100%" alt="">
+		
+		<article>
+			<h2>Ventajas de la IA </h2>
+		<p><span>• Automatización y eficiencia: La IA se encarga de tareas 
+repetitivas o rutinarias, agilizando procesos y permitiendo que 
+las personas se concentren en labores más creativas o 
+estratégicas. </span><br><br>
+<span>
+• Precisión y reducción de errores: Gracias a su exactitud, los 
+sistemas de IA pueden disminuir errores humanos, mejorando 
+la calidad en sectores como la producción industrial o la 
+medicina.
+</span><br><br>
+<span>• Toma de decisiones más informada: Al analizar grandes 
+volúmenes de datos, la IA identifica patrones y tendencias que 
+ayudan a tomar decisiones rápidas y acertadas. </span><br><br>
+
+<span>• Personalización de servicios: Permite adaptar productos, 
+contenidos o experiencias según las necesidades individuales 
+de cada persona, desde la educación hasta el marketing 
+digital. </span><br><br>
+<span>• Avances en salud: Facilita diagnósticos más precisos, análisis 
+de imágenes médicas y la creación de tratamientos 
+personalizados, optimizando la atención sanitaria. </span><br><br>
+<span>• Impulso a la creatividad e innovación: La IA puede generar 
+ideas, contenido original y soluciones novedosas que 
+complementan la creatividad humana en áreas como el arte, 
+el diseño y la investigación.</span><br><br>
+
+		<p><img src="paraventajas.jpg" width="100%" alt=""></p>
+		</p>
+
+		<h3> </h3>
+		<p><span></span>
+
+		<span></span>
+		<span></span></p>
+		<p><span></span>
+		<span></span>
+		<span></span>
+		<span></span></p>		
+		</article>
+		
+	</div>
+
+	 <nav class="menu">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰ Menú</label>
+    <ul class="menu-list">
+      <li><a href="introduccion.html">Introducción</a></li>
+      <li><a href="funciones.html">Funciones</a></li>
+      <li><a href="informacion.html">Información de IA</a></li>
+      <li><a href="inteligencia.html">Tipos de inteligencia artificial</a></li>
+      <li><a href="uso.html">Uso de la inteligencia artificial</a></li>
+      <li><a href="ventajas.html">Ventajas de IA</a></li>
+      <li><a href="desventajas.html">Desventajas de IA</a></li>
+      <li><a href="foto.html">Steiner</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

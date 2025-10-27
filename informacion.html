@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>informacion</title>
+  <link rel="stylesheet" href="paratodos.css">
+</head>
+<body>
+  <!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Columnas</title>
+	<style>
+		body{background-color: #ddd;}
+		#container{
+			background-color: white;
+			margin: 0 auto;
+			width: 800px;
+			padding: 20px;
+
+			
+		}
+
+		article{
+			padding-top: 20px;
+			column-count: 3;
+			column-gap: 20px;
+			column-rule: dotted 4px #ccc;
+			
+		}
+
+		/* Menú base */
+.menu {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  z-index: 10;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Ocultar checkbox */
+#menu-toggle {
+  display: none;
+}
+
+/* Estilo del botón "Menú" (menos brillo) */
+.menu-icon {
+  font-size: 18px;
+  color: black;
+  background-color: #7ddcff; /* celeste suave */
+  padding: 10px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  border: none;
+  font-weight: bold;
+}
+
+.menu-icon:hover {
+  background: linear-gradient(45deg, #00f2fe, #4facfe);
+}
+
+/* Lista oculta por defecto */
+.menu-list {
+  list-style: none;
+  margin-top: 10px;
+  padding: 0;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  border-radius: 10px;
+  display: none;
+  text-align: left; /* ← aquí cambiamos a izquierda */
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.15);
+}
+
+/* Mostrar lista cuando el checkbox está activado */
+#menu-toggle:checked + .menu-icon + .menu-list {
+  display: block;
+}
+
+/* Estilo de los enlaces */
+.menu-list li a {
+  display: block;
+  padding: 12px 20px;
+  color: #ffffff;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+  font-weight: bold;
+  letter-spacing: 1px;
+  text-align: left; /* ← forzamos alineación izquierda */
+}
+
+.menu-list li:last-child a {
+  border-bottom: none;
+}
+
+.menu-list li a:hover {
+  background: linear-gradient(90deg, #8360c3, #2ebf91);
+  color: #fff;
+  box-shadow: inset 0 0 8px #2ebf91;
+  border-radius: 5px;
+}
+
+/* Responsive para pantallas pequeñas */
+@media (max-width: 600px) {
+  .menu-icon {
+    font-size: 16px;
+    padding: 8px 12px;
+  }
+
+  .menu-list li a {
+    padding: 10px 14px;
+  }
+}
+
+
+	</style>
+</head>
+<body>
+	<div id="container">
+		<img src="ia.jpg" width="100%" alt="">
+		
+		<article>
+			<h2>Informacion de la IA </h2>
+		<p>
+<span>Según la Comisión Europea, la IA puede entenderse como un 
+conjunto de sistemas de software y en algunos casos también de 
+hardware desarrollados por personas para resolver objetivos 
+complejos. Estos sistemas actúan en entornos físicos o digitales 
+mediante: <br><br>
+• Captación del entorno:<br> recolectando e interpretando datos de 
+distinta naturaleza, ya sean organizados o no. <br><br>
+• Procesamiento y análisis:<br> transformando esa información en 
+conocimiento útil. <br><br>
+• Planificación de acciones:<br> decidiendo los pasos más 
+convenientes para alcanzar la meta establecida.<br><br> 
+La inteligencia artificial puede construirse a partir de reglas 
+simbólicas o a través de modelos de aprendizaje automático, y tiene 
+la capacidad de ajustar su comportamiento en función de los 
+resultados obtenidos previamente en su interacción con el entorno. 
+En términos sencillos, la IA es una rama de la informática orientada 
+a crear programas y máquinas capaces de llevar a cabo actividades 
+que normalmente requieren la intervención de la inteligencia 
+humana, como aprender, razonar, interpretar información y tomar 
+decisiones de forma autónoma. </span><br><br>
+		</p>
+
+		<p><img src="" width="100%" alt=""></p>
+		
+
+		
+		
+	</div>
+</body>
+</html>
+ <nav class="menu">
+    <input type="checkbox" id="menu-toggle">
+    <label for="menu-toggle" class="menu-icon">☰ Menú</label>
+    <ul class="menu-list">
+      <li><a href="introduccion.html">Introducción</a></li>
+      <li><a href="funciones.html">Funciones</a></li>
+      <li><a href="inteligencia.html">Tipos de inteligencia artificial</a></li>
+      <li><a href="uso.html">Uso de la inteligencia artificial</a></li>
+      <li><a href="ventajas.html">Ventajas de IA</a></li>
+      <li><a href="desventajas.html">Desventajas de IA</a></li>
+      <li><a href="foto.html">Steiner</a></li>
+    </ul>
+  </nav>
+</body>
+</html>

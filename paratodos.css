@@ -1,0 +1,52 @@
+
+body {
+  margin: 0;
+  height: 100vh;
+  background: linear-gradient(135deg, #05142f 0%, #102a60 30%, #3a2c78 60%, #6a3fa1 100%);
+  background-size: 400% 400%;
+  animation: fondo-mov 12s infinite alternate;
+  display: flex;
+  justify-content: center;     /* Centra horizontalmente */
+  align-items: flex-start;     /* Alinea arriba */
+  text-align: center;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.texto-lit {
+  margin-top: 60px;
+  font-size: 60px;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  text-shadow:
+    0 0 10px #00b3ff,
+    0 0 20px #00b3ff,
+    0 0 40px #00b3ff;
+  animation: brillo 2s infinite alternate;
+}
+
+@keyframes brillo {
+  0% {
+    text-shadow:
+      0 0 10px #00b3ff,
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff;
+  }
+  100% {
+    text-shadow:
+      0 0 20px #00b3ff,
+      0 0 40px #00b3ff,
+      0 0 60px #00b3ff;
+  }
+}
+
+@keyframes fondo-mov {
+  0% { background-position: 0% 50%; }
+  100% { background-position: 100% 50%; }
+}
+
+.introduccion{
+  text-align: center;
+  font-size: 20px;
+  font-family: fantasy;
+}
